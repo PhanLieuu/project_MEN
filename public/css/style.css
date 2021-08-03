@@ -1,0 +1,12 @@
+.footer-main{
+    background: #2d3436;
+    color: #fff;
+    padding: 20px;
+}
+.footer-main a{
+    color: #fff;
+    text-decoration: none;
+}
+.main{
+    min-height: 80vh;
+}

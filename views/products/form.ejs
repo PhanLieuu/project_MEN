@@ -1,0 +1,28 @@
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" name="name" value="<%= product.name %>" placeholder="Product Name">
+    <label for="floatingInput">Product Name</label>
+</div>
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" name="price" value="<%= product.price %>" placeholder="Price">
+    <label for="floatingInput">Price</label>
+</div>
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" name="quantity" value="<%= product.quantity %>" placeholder="Quantity">
+    <label for="floatingInput">Quantity</label>
+</div>
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" name="info" value="<%= product.info %>" placeholder="Infomation">
+    <label for="floatingInput">Infomation</label>
+</div>
+<div class="form-floating mb-3">
+    <select name="category" id="">
+        <% 
+            categories.map(cate=>{%>
+                <option value="<%= cate._id %>"><%= cate.name %></option>
+            <%})
+        %>
+    </select>
+</div>
+<div class="form-floating">
+    <input type="submit" class="form-control btn btn-primary" value="Save">
+</div>
